@@ -7,5 +7,5 @@ fi
 echo "create build..."
 mkdir build
 echo "create build finished!"
-cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/local/bin/gcc-13 -DCMAKE_CXX_COMPILER=/usr/local/bin/g++-13 
 make -C build -j8
